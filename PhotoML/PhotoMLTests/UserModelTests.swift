@@ -7,7 +7,10 @@
 
 import XCTest
 @testable import PhotoML // add testable target here to activite your test target module to reach target classes directly
-
+// name test func pattern: func test<System under test>_<Condition or state>_<Expected result>(){}
+// for test coverage: edit scheme > test > options > gather coverage for
+// the AAA partern: Arrange, Act, Assert pattern or second pattern similiar isyu  Given,  When, Then
+// paralel distributed testing on multiple simulator clones: edit scheme > test > info > target name > options > execute in parallel
 final class UserModelTests: XCTestCase {
 
     override func setUpWithError() throws {
@@ -33,4 +36,7 @@ final class UserModelTests: XCTestCase {
         }
     }
 
+    func skip_testA() throws { // for skipping test just add skip prefix
+        XCTFail("always failing  this unit test")
+    }
 }

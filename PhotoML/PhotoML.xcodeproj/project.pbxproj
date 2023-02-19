@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AF1C000829A0E85000B69456 /* PhotoMLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1C000729A0E85000B69456 /* PhotoMLTests.swift */; };
 		AF1C001229A0E85000B69456 /* PhotoMLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1C001129A0E85000B69456 /* PhotoMLUITests.swift */; };
 		AF1C001429A0E85000B69456 /* PhotoMLUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1C001329A0E85000B69456 /* PhotoMLUITestsLaunchTests.swift */; };
-		AF1C002129A0EFBD00B69456 /* UserModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1C002029A0EFBD00B69456 /* UserModelTests.swift */; };
+		AF1C002329A22C3A00B69456 /* UserModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1C002229A22C3A00B69456 /* UserModelTests.swift */; };
+		AF1C002529A22C7500B69456 /* SignupFormModelValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1C002429A22C7500B69456 /* SignupFormModelValidatorTests.swift */; };
+		AF1C002A29A22DAA00B69456 /* SignupFormValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1C002929A22DAA00B69456 /* SignupFormValidator.swift */; };
+		AF1C002C29A237E600B69456 /* SignupConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1C002B29A237E600B69456 /* SignupConstants.swift */; };
 		AF1CFFF129A0E84F00B69456 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1CFFF029A0E84F00B69456 /* AppDelegate.swift */; };
 		AF1CFFF329A0E84F00B69456 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1CFFF229A0E84F00B69456 /* SceneDelegate.swift */; };
 		AF1CFFF529A0E84F00B69456 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1CFFF429A0E84F00B69456 /* ViewController.swift */; };
@@ -38,11 +40,13 @@
 
 /* Begin PBXFileReference section */
 		AF1C000329A0E85000B69456 /* PhotoMLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoMLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF1C000729A0E85000B69456 /* PhotoMLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoMLTests.swift; sourceTree = "<group>"; };
 		AF1C000D29A0E85000B69456 /* PhotoMLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoMLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF1C001129A0E85000B69456 /* PhotoMLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoMLUITests.swift; sourceTree = "<group>"; };
 		AF1C001329A0E85000B69456 /* PhotoMLUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoMLUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		AF1C002029A0EFBD00B69456 /* UserModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModelTests.swift; sourceTree = "<group>"; };
+		AF1C002229A22C3A00B69456 /* UserModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModelTests.swift; sourceTree = "<group>"; };
+		AF1C002429A22C7500B69456 /* SignupFormModelValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModelValidatorTests.swift; sourceTree = "<group>"; };
+		AF1C002929A22DAA00B69456 /* SignupFormValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormValidator.swift; sourceTree = "<group>"; };
+		AF1C002B29A237E600B69456 /* SignupConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupConstants.swift; sourceTree = "<group>"; };
 		AF1CFFED29A0E84F00B69456 /* PhotoML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoML.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF1CFFF029A0E84F00B69456 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF1CFFF229A0E84F00B69456 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,8 +85,8 @@
 		AF1C000629A0E85000B69456 /* PhotoMLTests */ = {
 			isa = PBXGroup;
 			children = (
-				AF1C000729A0E85000B69456 /* PhotoMLTests.swift */,
-				AF1C002029A0EFBD00B69456 /* UserModelTests.swift */,
+				AF1C002229A22C3A00B69456 /* UserModelTests.swift */,
+				AF1C002429A22C7500B69456 /* SignupFormModelValidatorTests.swift */,
 			);
 			path = PhotoMLTests;
 			sourceTree = "<group>";
@@ -94,6 +98,32 @@
 				AF1C001329A0E85000B69456 /* PhotoMLUITestsLaunchTests.swift */,
 			);
 			path = PhotoMLUITests;
+			sourceTree = "<group>";
+		};
+		AF1C002629A22D7100B69456 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AF1CFFF429A0E84F00B69456 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AF1C002729A22D8300B69456 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AF1CFFF029A0E84F00B69456 /* AppDelegate.swift */,
+				AF1CFFF229A0E84F00B69456 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AF1C002829A22D8B00B69456 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AF1C002929A22DAA00B69456 /* SignupFormValidator.swift */,
+				AF1C002B29A237E600B69456 /* SignupConstants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		AF1CFFE429A0E84F00B69456 = {
@@ -119,9 +149,9 @@
 		AF1CFFEF29A0E84F00B69456 /* PhotoML */ = {
 			isa = PBXGroup;
 			children = (
-				AF1CFFF029A0E84F00B69456 /* AppDelegate.swift */,
-				AF1CFFF229A0E84F00B69456 /* SceneDelegate.swift */,
-				AF1CFFF429A0E84F00B69456 /* ViewController.swift */,
+				AF1C002829A22D8B00B69456 /* Utils */,
+				AF1C002729A22D8300B69456 /* App */,
+				AF1C002629A22D7100B69456 /* Controller */,
 				AF1CFFF629A0E84F00B69456 /* Main.storyboard */,
 				AF1CFFF929A0E85000B69456 /* Assets.xcassets */,
 				AF1CFFFB29A0E85000B69456 /* LaunchScreen.storyboard */,
@@ -198,6 +228,7 @@
 				TargetAttributes = {
 					AF1C000229A0E85000B69456 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 						TestTargetID = AF1CFFEC29A0E84F00B69456;
 					};
 					AF1C000C29A0E85000B69456 = {
@@ -270,8 +301,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF1C002A29A22DAA00B69456 /* SignupFormValidator.swift in Sources */,
 				AF1CFFF529A0E84F00B69456 /* ViewController.swift in Sources */,
 				AF1CFFF129A0E84F00B69456 /* AppDelegate.swift in Sources */,
+				AF1C002C29A237E600B69456 /* SignupConstants.swift in Sources */,
 				AF1CFFF329A0E84F00B69456 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,8 +313,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF1C002129A0EFBD00B69456 /* UserModelTests.swift in Sources */,
-				AF1C000829A0E85000B69456 /* PhotoMLTests.swift in Sources */,
+				AF1C002529A22C7500B69456 /* SignupFormModelValidatorTests.swift in Sources */,
+				AF1C002329A22C3A00B69456 /* UserModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,15 +528,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SHP38F3EM7;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = barisozgen.PhotoMLTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoML.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PhotoML";
@@ -515,11 +555,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SHP38F3EM7;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = barisozgen.PhotoMLTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
