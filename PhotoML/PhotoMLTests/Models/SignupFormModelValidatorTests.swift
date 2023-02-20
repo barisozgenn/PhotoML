@@ -13,11 +13,11 @@ import XCTest
 // paralel distributed testing on multiple simulator clones: edit scheme > test > info > target name > options > execute in parallel
 final class SignupFormModelValidatorTests: XCTestCase {
     // sut : system under test
-    var sut : SignupFormValidator!
+    var sut : SignupFormModelValidator!
     
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        sut = SignupFormValidator()
+        sut = SignupFormModelValidator()
     }
     
     override func tearDown() {
