@@ -117,15 +117,6 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		AF1C002829A22D8B00B69456 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				AF1C002929A22DAA00B69456 /* SignupFormValidator.swift */,
-				AF1C002B29A237E600B69456 /* SignupConstants.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
 		AF1CFFE429A0E84F00B69456 = {
 			isa = PBXGroup;
 			children = (
@@ -149,7 +140,7 @@
 		AF1CFFEF29A0E84F00B69456 /* PhotoML */ = {
 			isa = PBXGroup;
 			children = (
-				AF1C002829A22D8B00B69456 /* Utils */,
+				AFE1334829A34FB600D2D7A3 /* Signup */,
 				AF1C002729A22D8300B69456 /* App */,
 				AF1C002629A22D7100B69456 /* Controller */,
 				AF1CFFF629A0E84F00B69456 /* Main.storyboard */,
@@ -158,6 +149,39 @@
 				AF1CFFFE29A0E85000B69456 /* Info.plist */,
 			);
 			path = PhotoML;
+			sourceTree = "<group>";
+		};
+		AFE1334829A34FB600D2D7A3 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				AFE1334B29A34FDE00D2D7A3 /* Network */,
+				AFE1334A29A34FD700D2D7A3 /* Controller */,
+				AFE1334929A34FBD00D2D7A3 /* Model */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		AFE1334929A34FBD00D2D7A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF1C002929A22DAA00B69456 /* SignupFormValidator.swift */,
+				AF1C002B29A237E600B69456 /* SignupConstants.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AFE1334A29A34FD700D2D7A3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AFE1334B29A34FDE00D2D7A3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

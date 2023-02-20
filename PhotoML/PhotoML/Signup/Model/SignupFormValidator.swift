@@ -7,7 +7,7 @@
 
 import Foundation
 
-class SignupFormValidator {
+struct SignupFormValidator {
     func isFirstNameValid(firstName: String) -> Bool {
             var returnValue = true
             
